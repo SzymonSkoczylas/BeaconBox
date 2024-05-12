@@ -35,10 +35,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="text1" destination="lrR-gG-ahW" id="pjP-G0-Pk6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-27"/>
+            <point key="canvasLocation" x="48" y="-51"/>
         </scene>
     </scenes>
     <resources>
