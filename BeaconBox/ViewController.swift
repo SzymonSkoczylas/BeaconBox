@@ -20,13 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    func didDiscover(device: UWBIdentifiable, with rssi: NSNumber, from manager: EstimoteUWBManager)
-    {
-        var tmp = "Discovered device: \(device.publicIdentifier) rssi: \(rssi)"
-        print(tmp)
-        text1.text = tmp
-    }
+    //nowy komentarz
 }
 
 class EstimoteUWBManagerExample: NSObject, ObservableObject {
