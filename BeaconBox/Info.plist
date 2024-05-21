@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>camera is utlizied for arkit to give user horizontal and vertical info</string>
 	<key>NSNearbyInteractionUsageDescription</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>

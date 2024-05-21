@@ -7,21 +7,70 @@
 
 import UIKit
 import EstimoteUWB
+import SwiftUI
+
+        //-----------------------------//
+        //-----------------------------//
+        //        Global vars          //
+        //-----------------------------//
+        //-----------------------------//
+
+var trustedBeaconIDs = [String]()       // tu powinny sie znalesc id beaconow ktore moga przeprowadzic autoryzacje
+var discoveredBeaconIDs = [String]()
+
+        //-----------------------------//
+        //-----------------------------//
+        //        Controller code      //
+        //-----------------------------//
+        //-----------------------------//
+
 
 class ViewController: UIViewController {
     
     let uwb = EstimoteUWBManagerExample()
-    
+
     @IBOutlet weak var text1: UILabel!
+    @IBOutlet weak var AuthorizeByBeaconButton: UIButton!
+    
+    @IBAction func AuthorizeByBeaconButtonClicked(_ sender: UIButton) {
+        
+        //sprawdz czy to dziala
+        for id in trustedBeaconIDs
+            { print("Trusted Beacon ID : " + id) }
+        for id in discoveredBeaconIDs
+            { print("Discovered Beacon ID : " + id) }
+        print("clicked")
+        
+        //jezeli tak to to powinno swapnac do view controllera 2
+
+        var isAuthorizedByBeacon : Bool = false
+        for trustedBeaconID in trustedBeaconIDs {
+            for discoveredBeaconID in discoveredBeaconIDs {
+                if discoveredBeaconID == trustedBeaconID{
+                    isAuthorizedByBeacon = true
+                }
+            }
+        }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let VC2 = storyboard.instantiateViewController(identifier: "ViewController2")
+        if isAuthorizedByBeacon == true{
+            show(VC2, sender: self)
+        }
+    }
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    //nowy komentarz
 }
+
+
+        //-----------------------------//
+        //-----------------------------//
+        //  Estimote controller below  //
+        //-----------------------------//
+        //-----------------------------//
 
 class EstimoteUWBManagerExample: NSObject, ObservableObject {
     private var uwbManager: EstimoteUWBManager?
@@ -43,7 +92,7 @@ class EstimoteUWBManagerExample: NSObject, ObservableObject {
 // REQUIRED PROTOCOL
 extension EstimoteUWBManagerExample: EstimoteUWBManagerDelegate {
     func didUpdatePosition(for device: EstimoteUWBDevice) {
-        print("Position updated for device: \(device)")
+        //print("Position updated for device: \(device)")
     }
     
     // OPTIONAL
@@ -51,6 +100,10 @@ extension EstimoteUWBManagerExample: EstimoteUWBManagerDelegate {
         print("Discovered device: \(device.publicIdentifier) rssi: \(rssi)")
         // if shouldHandleConnectivity is set to true - then you could call manager.connect(to: device)
         // additionally you can globally call discoonect from the scope where you have inititated EstimoteUWBManager -> disconnect(from: device) or disconnect(from: publicId)
+        
+        trustedBeaconIDs.append(device.publicIdentifier)
+        discoveredBeaconIDs.append(device.publicIdentifier)
+        
     }
     
     // OPTIONAL

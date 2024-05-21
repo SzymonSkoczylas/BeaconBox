@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98011A9F2BF10165006C83B1 /* EstimoteUWB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98011A9E2BF10165006C83B1 /* EstimoteUWB.xcframework */; };
 		980FF2B72BEF8229004722FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FF2B62BEF8229004722FC /* AppDelegate.swift */; };
 		980FF2B92BEF8229004722FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FF2B82BEF8229004722FC /* SceneDelegate.swift */; };
 		980FF2BB2BEF8229004722FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FF2BA2BEF8229004722FC /* ViewController.swift */; };
 		980FF2BE2BEF8229004722FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980FF2BC2BEF8229004722FC /* Main.storyboard */; };
 		980FF2C02BEF822C004722FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980FF2BF2BEF822C004722FC /* Assets.xcassets */; };
 		980FF2C32BEF822C004722FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980FF2C12BEF822C004722FC /* LaunchScreen.storyboard */; };
+		98ABBD9B2BFD044300F11D46 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ABBD9A2BFD044300F11D46 /* ViewController2.swift */; };
+		98DC49852BF293A200F90B0F /* EstimoteUWB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98011A9E2BF10165006C83B1 /* EstimoteUWB.xcframework */; };
+		98DC49862BF293A200F90B0F /* EstimoteUWB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98011A9E2BF10165006C83B1 /* EstimoteUWB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				98DC49862BF293A200F90B0F /* EstimoteUWB.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +42,7 @@
 		980FF2BF2BEF822C004722FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980FF2C22BEF822C004722FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980FF2C42BEF822C004722FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98ABBD9A2BFD044300F11D46 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98011A9F2BF10165006C83B1 /* EstimoteUWB.xcframework in Frameworks */,
+				98DC49852BF293A200F90B0F /* EstimoteUWB.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +84,7 @@
 				980FF2BF2BEF822C004722FC /* Assets.xcassets */,
 				980FF2C12BEF822C004722FC /* LaunchScreen.storyboard */,
 				980FF2C42BEF822C004722FC /* Info.plist */,
+				98ABBD9A2BFD044300F11D46 /* ViewController2.swift */,
 			);
 			path = BeaconBox;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				980FF2BB2BEF8229004722FC /* ViewController.swift in Sources */,
+				98ABBD9B2BFD044300F11D46 /* ViewController2.swift in Sources */,
 				980FF2B72BEF8229004722FC /* AppDelegate.swift in Sources */,
 				980FF2B92BEF8229004722FC /* SceneDelegate.swift in Sources */,
 			);
