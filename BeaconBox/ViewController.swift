@@ -67,9 +67,7 @@ class EstimoteUWBManagerExample: NSObject, ObservableObject {
     }
 
     private func setupUWB() {
-        uwbManager = EstimoteUWBManager(delegate: self,
-                                        options: EstimoteUWBOptions(shouldHandleConnectivity: true,
-                                                                    isCameraAssisted: false))
+        uwbManager = EstimoteUWBManager(delegate: self, options: EstimoteUWBOptions(shouldHandleConnectivity: true, isCameraAssisted: false))
         uwbManager?.startScanning()
     }
 }
@@ -124,9 +122,9 @@ extension EstimoteUWBManagerExample: EstimoteUWBManagerDelegate {
     func Authorization()
     {
         for id in trustedBeaconIDs
-        { print("Trusted Beacon ID : " + id) }
+            { print("Trusted Beacon ID : " + id) }
         for beacon in beaconsInRange
-        { print("Discovered Beacon ID : " + beacon.ID) }
+            { print("Discovered Beacon ID : " + beacon.ID) }
         print("clicked")
         
         //jezeli tak to to powinno swapnac do view controllera 2
