@@ -14,7 +14,7 @@
 		980FF2BE2BEF8229004722FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980FF2BC2BEF8229004722FC /* Main.storyboard */; };
 		980FF2C02BEF822C004722FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 980FF2BF2BEF822C004722FC /* Assets.xcassets */; };
 		980FF2C32BEF822C004722FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 980FF2C12BEF822C004722FC /* LaunchScreen.storyboard */; };
-		9820B7CD2C0FADD400240E89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9820B7CC2C0FADD400240E89 /* GoogleService-Info.plist */; };
+		987BD8CE2C0FB03C00250436 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987BD8CD2C0FB03C00250436 /* GoogleService-Info.plist */; };
 		98ABBD9B2BFD044300F11D46 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ABBD9A2BFD044300F11D46 /* ViewController2.swift */; };
 		98DC49852BF293A200F90B0F /* EstimoteUWB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98011A9E2BF10165006C83B1 /* EstimoteUWB.xcframework */; };
 		98DC49862BF293A200F90B0F /* EstimoteUWB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 98011A9E2BF10165006C83B1 /* EstimoteUWB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -44,7 +44,7 @@
 		980FF2BF2BEF822C004722FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		980FF2C22BEF822C004722FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		980FF2C42BEF822C004722FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9820B7CC2C0FADD400240E89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		987BD8CD2C0FB03C00250436 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		98ABBD9A2BFD044300F11D46 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		CAF95A801331DE5F8FF2E5FD /* Pods_BeaconBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaconBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E4BDC1DC08D36CD003820E /* Pods-BeaconBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconBox.debug.xcconfig"; path = "Target Support Files/Pods-BeaconBox/Pods-BeaconBox.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		980FF2AA2BEF8229004722FC = {
 			isa = PBXGroup;
 			children = (
-				9820B7CC2C0FADD400240E89 /* GoogleService-Info.plist */,
+				987BD8CD2C0FB03C00250436 /* GoogleService-Info.plist */,
 				98011A9E2BF10165006C83B1 /* EstimoteUWB.xcframework */,
 				980FF2B52BEF8229004722FC /* BeaconBox */,
 				980FF2B42BEF8229004722FC /* Products */,
@@ -182,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				980FF2C32BEF822C004722FC /* LaunchScreen.storyboard in Resources */,
-				9820B7CD2C0FADD400240E89 /* GoogleService-Info.plist in Resources */,
+				987BD8CE2C0FB03C00250436 /* GoogleService-Info.plist in Resources */,
 				980FF2C02BEF822C004722FC /* Assets.xcassets in Resources */,
 				980FF2BE2BEF8229004722FC /* Main.storyboard in Resources */,
 			);
